@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Indexbanner1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(./images/background.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.IndexHeading {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2vw;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.Banner1paragraph {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.Banner1paragraph h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+.Banner1paragraph p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.Banner1paragraph button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #ffbe44;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.Banner1paragraph span {
+    background: #ffbe44;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.footer p {
+    width: 100%;
+    position: absolute;
+    top: 95%;
+    transform: translateY(-50%);
+    color: #fff
+}
+
+.Indexbanner2 {
+    width: 100%;
+    height: 50vh;
+    background: rgb(70, 44, 4);
+}
+
+.Banner2paragraph {
+    color: white;
+}
+
+.left {
+    width: 50%;
+    height: 25vh;
+    float: left;
+}
+
+.right {
+    margin-left: 50%;
+    height: 25vh;
+}
+
+.Banner2paragraph .left{
+    border-style: solid;
+    border-top: hidden;
+    border-bottom: hidden;
+    border-left: hidden;
+    background-image: url(./images/night.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Banner2paragraph .left button{
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50%);
+    top: 107.5vh;
+    left: 25vw;
+    transform: translateX(-50%);
+}
+
+.Banner2paragraph .right {
+    background-image: url(./images/night.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Banner2paragraph .right ul {
+    position: relative;
+    left: 5vw;
+    top: 1rem;
+}
+
+.Banner2paragraph .right ul li{
+    color: green;
+}
+
+.Banner2paragraph .right ul li a{
+    color: green;
+    text-decoration: none;
+}
+
+.Banner2paragraph button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #31087c;
+    background: transparent;
+    color: green;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.Banner2paragraph span {
+    background: #31087c;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+.banner2 {
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+.GameHeading {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.introduction {
+    color: white;
+    font-size: small;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.gametable {
+    color: white;
+}
