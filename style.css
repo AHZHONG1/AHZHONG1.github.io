@@ -6,11 +6,15 @@
 
 .nothidden {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 .hidden {
     display: none;
+}
+
+#noHidden {
+    cursor: pointer;
 }
 
 .center {
@@ -23,7 +27,8 @@
     width: 100%;
     margin: 0%;
     padding: 0%;
-    display: flex;
+    border-style: solid;
+    display: block;
 }
 
 .Indexbanner1 {
