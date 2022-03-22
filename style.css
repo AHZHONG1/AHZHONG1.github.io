@@ -4,9 +4,23 @@
     font-family: sans-serif;
 }
 
+.nothidden {
+    width: 100vw;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    position: relative;
+    top: 10vh;
+    text-align: center;
+}
+
 .AHZHONGbanner{
     width: 100%;
-    height: 50%;
     margin: 0%;
     padding: 0%;
     display: flex;
