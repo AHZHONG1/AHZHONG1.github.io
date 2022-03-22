@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    /* background-color: brown; */
+}
+
+#AHZHONGbanner {
+    width: 100%;
+    height: 50%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
 }
 
 .Indexbanner1 {
@@ -60,19 +69,20 @@
 
 .Banner1paragraph {
     width: 100%;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 40vh;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
 }
 .Banner1paragraph h1 {
-    font-size: 70px;
-    margin-top: 80px;
+    font-size: 10vh;
+    margin-top: 0px;
 }
 .Banner1paragraph p {
-    margin: 20px auto;
-    font-weight: 100;
+    margin:  0px;
+    font-size: 2.5vh;
+    font-weight: 100; 
     line-height: 25px;
 }
 
@@ -113,8 +123,8 @@ button:hover {
 
 .footer p {
     width: 100%;
-    position: absolute;
-    top: 95%;
+    position: relative;
+    top: 50vh;
     transform: translateY(-50%);
     color: #fff
 }
@@ -151,10 +161,10 @@ button:hover {
 }
 
 .Banner2paragraph .left button{
-    position: absolute;
+    position: relative;
     text-align: center;
     transform: translateY(-50%);
-    top: 107.5vh;
+    top: 7.5vh;
     left: 25vw;
     transform: translateX(-50%);
 }
@@ -168,7 +178,8 @@ button:hover {
 .Banner2paragraph .right ul {
     position: relative;
     left: 5vw;
-    top: 1rem;
+    top: 2.5vh;
+    width: calc(100% - 5vw);
 }
 
 .Banner2paragraph .right ul li{
@@ -230,5 +241,28 @@ button:hover {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .gametable {
+    width: 100vw;
     color: white;
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.gametable table {
+    border-style: solid;
+}
+
+.gametable th {
+    width: 500px;
+    border-style: solid;
+}
+
+.gametable tr td {
+    border-style: solid;
+    vertical-align: middle;
+    position: relative;
+    text-align: center; 
 }
