@@ -6,18 +6,25 @@ function myOpenMenu() {
 }
 
 function noHidden() {
-    document.getElementsByClassName("hidden")[0].style.display = "initial";
+    document.getElementsByClassName("hidden")[0].style.display = "block";
 
     document.getElementById("noHidden").style.display = "none";
 
     document.getElementsByClassName("nothidden")[0].style.display = "initial";
 
-    // const element = document.querySelector('.AHZHONGbanner')
-    if (window.innerWidth > 1000) {
-        document.getElementsByClassName("AHZHONGbanner")[0].style.width = "50%";
-
-        document.getElementsByClassName("AHZHONGbanner")[0].style["margin-left"] = "auto";
-
-        document.getElementsByClassName("AHZHONGbanner")[0].style["margin-right"] = "auto";
+    const element = document.querySelector('.AHZHONGbanner')
+    let cssAHZHONGbanner = document.getElementsByClassName("AHZHONGbanner")[0];
+    if (window.innerWidth > 960) {
+        cssAHZHONGbanner.style.width = "50vw";
+        cssAHZHONGbanner.style["padding-left"] = "25vw";
+        cssAHZHONGbanner.style["padding-right"] = "25vw";
+    } else {
+        cssAHZHONGbanner.style.width = "100vw";
+        cssAHZHONGbanner.style["padding-left"] = "0vw";
+        cssAHZHONGbanner.style["padding-right"] = "0vw";
     }
 }
+
+window.addEventListener("resize", noHidden);
+
+noHidden();

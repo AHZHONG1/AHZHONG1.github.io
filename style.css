@@ -4,13 +4,20 @@
     font-family: sans-serif;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 .nothidden {
     width: 100vw;
     height: 100%;
+    position: sticky;
+    top: 0;
 }
 
 .hidden {
     display: none;
+    top: 30vh;
 }
 
 #noHidden {
@@ -24,15 +31,14 @@
 }
 
 .AHZHONGbanner{
-    width: 100%;
-    margin: 0%;
+    width: 100vw;
     padding: 0%;
-    border-style: solid;
     display: block;
+    background: orange;
 }
 
 .Indexbanner1 {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(./images/background.webp);
     background-size: cover;
@@ -47,8 +53,6 @@
     margin-bottom: 0px;
     margin-left: 0px;
     font-family: 'Courier New', Courier, monospace;
-    
-    
 }
 .navbar {
     width: 85%;
@@ -56,13 +60,15 @@
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content:right;
+    justify-content: right;
+    
 }
 .navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 2vw;
     position: relative;
+    
 }
 
 .navbar ul li a {
@@ -80,13 +86,14 @@
     left: 0;
     bottom: 0;
     transition: 0.5s;
+    
 }
 .navbar ul li:hover::after {
     width: 100%;
 }
 
 .Banner1paragraph {
-    width: 100%;
+    width: 100vw;
     position: relative;
     top: 40vh;
     transform: translateY(-50%);
@@ -140,15 +147,15 @@ button:hover {
 }
 
 .footer p {
-    width: 100%;
+    width: 100vw;
     position: relative;
     top: 50vh;
     transform: translateY(-50%);
-    color: #fff
+    color: #fff;
 }
 
 .Indexbanner2 {
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     background: rgb(70, 44, 4);
 }
@@ -158,13 +165,13 @@ button:hover {
 }
 
 .left {
-    width: 50%;
+    width: 50vw;
     height: 25vh;
     float: left;
 }
 
 .right {
-    margin-left: 50%;
+    margin-left: 50vw;
     height: 25vh;
 }
 
