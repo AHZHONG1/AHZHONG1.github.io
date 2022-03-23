@@ -15,28 +15,36 @@ function noHidden() {
 
     document.getElementsByClassName("nothidden")[0].style.display = "initial";
 
-    setBannerSize();
+    var bannerheight= setBannerSize();
+
+    document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheight + "px";
 }
 
 function setBannerSize() {
     if (click == true) {
         const element = document.querySelector('.AHZHONGbanner');
         let cssAHZHONGbanner = document.getElementsByClassName("AHZHONGbanner")[0];
+        let bannerheight = 0;
         if (window.innerWidth >= screen.width / 2) {
+            bannerheight = (screen.width / 2) / 38 * 11;
             cssAHZHONGbanner.style.width = screen.width / 2 + "px";
-            cssAHZHONGbanner.style.height = "calc(" + screen.width / 2 + "px / 38 * 11)";
+            cssAHZHONGbanner.style.height = bannerheight + "px";
 
             cssAHZHONGbanner.style["padding-left"] = ((window.innerWidth - (screen.width / 2)) / 2) + "px";
             cssAHZHONGbanner.style["padding-right"] = ((window.innerWidth - (screen.width / 2)) / 2) + "px";
         } else if (window.innerWidth < (screen.width / 2)) {
+            bannerheight = window.innerWidth / 38 * 11;
             cssAHZHONGbanner.style.width = "100vw";
-            cssAHZHONGbanner.style.height = "calc(100vw / 38 * 11)";
+            cssAHZHONGbanner.style.height = bannerheight + "px";
             cssAHZHONGbanner.style["padding-left"] = "0vw";
             cssAHZHONGbanner.style["padding-right"] = "0vw";
-        } else {
-
         }
+        document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheight + "px";
+        return bannerheight;
+    } else {
+        return 0;
     }
+    
 }
 
 window.addEventListener("resize", setBannerSize)
