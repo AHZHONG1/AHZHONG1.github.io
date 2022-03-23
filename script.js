@@ -5,7 +5,10 @@ function myOpenMenu() {
     }
 }
 
+var click = false;
+
 function noHidden() {
+    click = true;
     document.getElementsByClassName("hidden")[0].style.display = "block";
 
     document.getElementById("noHidden").style.display = "none";
@@ -16,22 +19,26 @@ function noHidden() {
 }
 
 function setBannerSize() {
-    const element = document.querySelector('.AHZHONGbanner');
-    let cssAHZHONGbanner = document.getElementsByClassName("AHZHONGbanner")[0];
-    if (window.innerWidth > 960) {
-        cssAHZHONGbanner.style.width = "50vw";
-        cssAHZHONGbanner.style.height = "calc(50vw / 38 * 11)";
+    if (click == true) {
+        const element = document.querySelector('.AHZHONGbanner');
+        let cssAHZHONGbanner = document.getElementsByClassName("AHZHONGbanner")[0];
+        if (window.innerWidth >= screen.width / 2) {
+            cssAHZHONGbanner.style.width = screen.width / 2 + "px";
+            cssAHZHONGbanner.style.height = "calc(" + screen.width / 2 + "px / 38 * 11)";
 
-        cssAHZHONGbanner.style["padding-left"] = "25vw";
-        cssAHZHONGbanner.style["padding-right"] = "25vw";
-    } else {
-        cssAHZHONGbanner.style.width = "100vw";
-        cssAHZHONGbanner.style.height = "calc(100vw / 38 * 11)";
-        cssAHZHONGbanner.style["padding-left"] = "0vw";
-        cssAHZHONGbanner.style["padding-right"] = "0vw";
+            cssAHZHONGbanner.style["padding-left"] = ((window.innerWidth - (screen.width / 2)) / 2) + "px";
+            cssAHZHONGbanner.style["padding-right"] = ((window.innerWidth - (screen.width / 2)) / 2) + "px";
+        } else if (window.innerWidth < (screen.width / 2)) {
+            cssAHZHONGbanner.style.width = "100vw";
+            cssAHZHONGbanner.style.height = "calc(100vw / 38 * 11)";
+            cssAHZHONGbanner.style["padding-left"] = "0vw";
+            cssAHZHONGbanner.style["padding-right"] = "0vw";
+        } else {
+
+        }
     }
 }
 
-window.addEventListener("resize", setBannerSize);
+window.addEventListener("resize", setBannerSize)
 
 setBannerSize();
