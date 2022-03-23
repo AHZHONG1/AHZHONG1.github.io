@@ -12,19 +12,26 @@ function noHidden() {
 
     document.getElementsByClassName("nothidden")[0].style.display = "initial";
 
-    const element = document.querySelector('.AHZHONGbanner')
+    setBannerSize();
+}
+
+function setBannerSize() {
+    const element = document.querySelector('.AHZHONGbanner');
     let cssAHZHONGbanner = document.getElementsByClassName("AHZHONGbanner")[0];
     if (window.innerWidth > 960) {
         cssAHZHONGbanner.style.width = "50vw";
+        cssAHZHONGbanner.style.height = "calc(50vw / 38 * 11)";
+
         cssAHZHONGbanner.style["padding-left"] = "25vw";
         cssAHZHONGbanner.style["padding-right"] = "25vw";
     } else {
         cssAHZHONGbanner.style.width = "100vw";
+        cssAHZHONGbanner.style.height = "calc(100vw / 38 * 11)";
         cssAHZHONGbanner.style["padding-left"] = "0vw";
         cssAHZHONGbanner.style["padding-right"] = "0vw";
     }
 }
 
-window.addEventListener("resize", noHidden);
+window.addEventListener("resize", setBannerSize);
 
-noHidden();
+setBannerSize();

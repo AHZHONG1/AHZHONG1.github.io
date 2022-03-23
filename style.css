@@ -10,14 +10,12 @@
 
 .nothidden {
     width: 100vw;
-    height: 100%;
-    position: sticky;
+    height: calc(100vw / 38 * 11);
     top: 0;
 }
 
 .hidden {
     display: none;
-    top: 30vh;
 }
 
 #noHidden {
@@ -31,10 +29,15 @@
 }
 
 .AHZHONGbanner{
+    background-image: url(./images/Banner\ 1.png);
+    background-size: contain;
     width: 100vw;
+    height: calc(100vw / 38 * 11);
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 0%;
     display: block;
-    background: orange;
+    background-color: orange;
 }
 
 .Indexbanner1 {
