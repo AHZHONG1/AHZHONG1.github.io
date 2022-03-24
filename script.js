@@ -13,6 +13,8 @@ function noHidden() {
 
     document.getElementById("noHidden").style.display = "none";
 
+    document.getElementById("arrow").style.display = "none";
+
     document.getElementsByClassName("nothidden")[0].style.display = "initial";
 
     var bannerheight= setBannerSize();
