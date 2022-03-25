@@ -5,6 +5,7 @@ function myOpenMenu() {
     }
 }
 
+var banner = true;
 var click = false;
 
 function noHidden() {
@@ -17,10 +18,12 @@ function noHidden() {
 
     document.getElementsByClassName("nothidden")[0].style.display = "initial";
 
-    var bannerheight= setBannerSize();
+    var bannerheight = setBannerSize();
 
     document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheight + "px";
 }
+
+let bannerheightglobal = 0;
 
 function setBannerSize() {
     if (click == true) {
@@ -41,12 +44,36 @@ function setBannerSize() {
             cssAHZHONGbanner.style["padding-left"] = "0vw";
             cssAHZHONGbanner.style["padding-right"] = "0vw";
         }
-        document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheight + "px";
-        return bannerheight;
+        // if (banner == true) {
+            document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheight + "px";
+            document.getElementById("bannerhidden").style.top = bannerheight + "px";
+            bannerheightglobal = bannerheight;
+        //}
+            return bannerheight;
+        } else {
+            return 0;
+        }
+
+}
+
+
+
+
+function closeBanner() {
+    if (banner == true) {
+        banner = false;
+        document.getElementsByClassName("AHZHONGbanner")[0].style.display = "none";
+        document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = "0px";
+        document.getElementById("bannerhidden").style.top = "0px";
+        document.getElementById("bannerhidden").innerHTML = "&#8595;";
+
     } else {
-        return 0;
+        banner = true;
+        document.getElementsByClassName("AHZHONGbanner")[0].style.display = "initial";
+        document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheightglobal + "px";
+        document.getElementById("bannerhidden").style.top = bannerheightglobal + "px";
+        document.getElementById("bannerhidden").innerHTML = "&#8593;";
     }
-    
 }
 
 window.addEventListener("resize", setBannerSize)

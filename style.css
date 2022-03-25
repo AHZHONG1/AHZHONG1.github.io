@@ -51,7 +51,7 @@
     display: block;
     background-color: orange;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .Indexbanner1 {
@@ -64,18 +64,39 @@
 }
 
 .IndexHeading {
-    color: white;
+    z-index: 2;
+    background-color: orange;
+    width: 1920px;
+    height: 37px;
     text-align: center;
+    position: fixed;
+    color: white;
+    left: 50vw;
+    transform: translateX(-50%);
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+#bannerhidden {
+    color: white;
+    position: fixed;
+    width: 20px;
+    z-index: 2;
+    top: 30vh;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    font-size: 200%;
+}
+
 .navbar {
     width: 85%;
     margin: auto;
-    padding: 35px 0;
+    padding: 45px 0;
     display: flex;
     align-items: center;
     justify-content: right;
