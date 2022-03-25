@@ -30,6 +30,9 @@ function setBannerSize() {
         const element = document.querySelector('.AHZHONGbanner');
         let cssAHZHONGbanner = document.getElementsByClassName("AHZHONGbanner")[0];
         let bannerheight = 0;
+        if (banner == false) {
+            closeBanner();
+        }
         if (window.innerWidth >= screen.width / 2) {
             bannerheight = (screen.width / 2) / 38 * 11;
             cssAHZHONGbanner.style.width = screen.width / 2 + "px";

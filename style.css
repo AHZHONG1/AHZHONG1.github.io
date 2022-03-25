@@ -81,6 +81,7 @@
 }
 
 #bannerhidden {
+    cursor: pointer;
     color: white;
     position: fixed;
     width: 20px;
