@@ -30,9 +30,6 @@ function setBannerSize() {
         const element = document.querySelector('.AHZHONGbanner');
         let cssAHZHONGbanner = document.getElementsByClassName("AHZHONGbanner")[0];
         let bannerheight = 0;
-        if (banner == false) {
-            closeBanner();
-        }
         if (window.innerWidth >= screen.width / 2) {
             bannerheight = (screen.width / 2) / 38 * 11;
             cssAHZHONGbanner.style.width = screen.width / 2 + "px";
@@ -47,20 +44,22 @@ function setBannerSize() {
             cssAHZHONGbanner.style["padding-left"] = "0vw";
             cssAHZHONGbanner.style["padding-right"] = "0vw";
         }
-        // if (banner == true) {
+        if (banner == true) {
             document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheight + "px";
             document.getElementById("bannerhidden").style.top = bannerheight + "px";
             bannerheightglobal = bannerheight;
-        //}
-            return bannerheight;
         } else {
-            return 0;
+            document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = "0px";
+            document.getElementById("bannerhidden").style.top = "0px";
+            bannerheightglobal = bannerheight;
         }
 
+        return bannerheight;
+    } else {
+        return 0;
+    }
+
 }
-
-
-
 
 function closeBanner() {
     if (banner == true) {
