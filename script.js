@@ -1,9 +1,9 @@
-function myOpenMenu() {
-    var ans;
-    if (ans = document.getElementById("openMenu")) {
-        ans.innerHTML = "Return";
-    }
-}
+// function myOpenMenu() {
+//     var ans;
+//     if (ans = document.getElementById("openMenu")) {
+//         ans.innerHTML = "Return";
+//     }
+// }
 
 var banner = true;
 var click = false;
@@ -21,6 +21,10 @@ function noHidden() {
     var bannerheight = setBannerSize();
 
     document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheight + "px";
+
+    document.getElementsByClassName("Indexbanner1")[0].style.height = "calc(100vh - " + bannerheightglobal + "px)";
+
+    document.getElementsByClassName("Banner1paragraph")[0].style.top = "25vh";
 }
 
 let bannerheightglobal = 0;
@@ -68,6 +72,8 @@ function closeBanner() {
         document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = "0px";
         document.getElementById("bannerhidden").style.top = "0px";
         document.getElementById("bannerhidden").innerHTML = "&#8595;";
+        document.getElementsByClassName("Indexbanner1")[0].style.height = "100vh";
+        document.getElementsByClassName("Banner1paragraph")[0].style.top = "40vh";
 
     } else {
         banner = true;
@@ -75,6 +81,8 @@ function closeBanner() {
         document.getElementsByClassName("Indexbanner1")[0].style["padding-top"] = bannerheightglobal + "px";
         document.getElementById("bannerhidden").style.top = bannerheightglobal + "px";
         document.getElementById("bannerhidden").innerHTML = "&#8593;";
+        document.getElementsByClassName("Indexbanner1")[0].style.height = "calc(100vh - " + bannerheightglobal + "px)";
+        document.getElementsByClassName("Banner1paragraph")[0].style.top = "25vh";
     }
 }
 

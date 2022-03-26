@@ -97,7 +97,7 @@
 .navbar {
     width: 85%;
     margin: auto;
-    padding: 45px 0;
+    padding: 80px 0;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -184,36 +184,36 @@ button:hover {
     border: none;
 }
 
-.footer p {
+.footer {
     width: 100vw;
-    position: relative;
-    top: 50vh;
+    position: absolute;
+    top: 98vh;
     transform: translateY(-50%);
     color: #fff;
 }
 
-.Indexbanner2 {
+/* .Indexbanner2 {
     width: 100vw;
     height: 50vh;
     background: rgb(70, 44, 4);
-}
+} */
 
-.Banner2paragraph {
+/* .Banner2paragraph {
     color: white;
-}
+} */
 
-.left {
+/* .left {
     width: 50vw;
     height: 25vh;
     float: left;
-}
+} */
 
-.right {
+/* .right {
     margin-left: 50vw;
     height: 25vh;
-}
+} */
 
-.Banner2paragraph .left{
+/* .Banner2paragraph .left{
     border-style: solid;
     border-top: hidden;
     border-bottom: hidden;
@@ -221,40 +221,40 @@ button:hover {
     background-image: url(./images/night.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
-.Banner2paragraph .left button{
+/* .Banner2paragraph .left button{
     position: relative;
     text-align: center;
     transform: translateY(-50%);
     top: 7.5vh;
     left: 25vw;
     transform: translateX(-50%);
-}
+} */
 
-.Banner2paragraph .right {
+/* .Banner2paragraph .right {
     background-image: url(./images/night.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
-.Banner2paragraph .right ul {
+/* .Banner2paragraph .right ul {
     position: relative;
     left: 5vw;
     top: 2.5vh;
     width: calc(100% - 5vw);
-}
+} */
 
-.Banner2paragraph .right ul li{
-    color: green;
-}
+/* .Banner2paragraph .right ul li{
+    color: green; 
+}*/
 
-.Banner2paragraph .right ul li a{
+/* .Banner2paragraph .right ul li a{
     color: green;
     text-decoration: none;
-}
+} */
 
-.Banner2paragraph button {
+/* .Banner2paragraph button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -267,9 +267,9 @@ button:hover {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-}
+} */
 
-.Banner2paragraph span {
+/* .Banner2paragraph span {
     background: #31087c;
     height: 100%;
     width: 0;
@@ -279,7 +279,7 @@ button:hover {
     bottom: 0;
     z-index: -1;
     transition: 0.5s;
-}
+} */
 
 button:hover span {
     width: 100%;
