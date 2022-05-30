@@ -1,0 +1,267 @@
+﻿* {
+    /*border-style: solid;*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: #990011FF;
+}
+
+
+/*about_us.html*/
+#menu_icon {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 25px;
+}
+
+#icon_upper {
+}
+
+#icon_middle {
+}
+
+#icon_lower {
+}
+
+#Title {
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    color: #FCF6F5FF;
+}
+
+    #Title h1 {
+        font-size: 1.5rem;
+    }
+
+#Login_icon {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #FCF6F5FF;
+}
+
+.main {
+    height: 500px;
+    position: relative;
+    background-image: url("../images/Gaming_learning.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main_button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 200px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #8AAAE5;
+    margin: 20px 10px;
+    padding: 15px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+
+    button span {
+        background: #8AAAE5;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: width 0.5s;
+    }
+
+    button:hover span {
+        width: 100%;
+    }
+
+    button:hover {
+        border: none;
+    }
+
+.toAbout_us {
+    height: 500px;
+    background-image: url("../images/programming.jpg");
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    color: springgreen;
+}
+
+#toAbout_us_title {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    text-align: center;
+}
+
+#toAbout_us_description {
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    text-align: center;
+    /*transform: translate(-10%, -10%);*/
+}
+
+#toAbout_us_button {
+    position: absolute;
+    top: 70%;
+    left: 22.5%;
+    transform: translateX(-50%);
+    color: springgreen;
+}
+
+.toGallery {
+    color: darkred;
+    height: 500px;
+    background-image: url("../images/snow.jpg");
+    background-position: center;
+    position: relative;
+}
+
+#toGallery_title {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    height: 30%;
+    top: 10%;
+    left: 5%;
+}
+
+#toGallery_description {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    height: 30%;
+    top: 50%;
+    left: 5%;
+}
+
+#toGallery_button {
+    position: absolute;
+    top: 65%;
+    left: 82.5%;
+    transform: translate(-50%, -50%);
+    color: darkred;
+}
+
+.toCreateAccount {
+    height: 500px;
+    background-image: url("../images/information.jpg");
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+#toCreateAccount_description {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    height: 50%;
+    top: 10%;
+    left: 5%;
+}
+
+#toCreateAccount_directionMessage {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    height: 20%;
+    top: 70%;
+    left: 5%;
+}
+
+#toCreateAccount_button {
+    position: absolute;
+    top: 80%;
+    left: 82.5%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    position: relative;
+    background: #990011FF;
+}
+
+#footer_title {
+    color: gray;
+    margin-top: 0;
+    text-align: center;
+}
+
+.footer_list ul li {
+    color: white;
+    list-style-type: circle;
+}
+
+#footer_copyright {
+    color: white;
+    text-align: right;
+    margin-bottom: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/*about_us.html*/
+#about_us_main {
+    position: relative;
+    height: 2000px;
+    background-color: green;
+}
+
+#about_us_title {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    border: solid 2px;
+    width: 90%;
+    height: 10%;
+    text-align: center;
+}
+
+#about_us_description {
+    position: absolute;
+    border: solid 2px;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+}
