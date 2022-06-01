@@ -265,3 +265,206 @@ button {
     width: 90%;
     height: 80%;
 }
+
+/*game.html*/
+#game_main {
+    position: relative;
+    height: 2000px;
+    background-color: green;
+}
+
+#game_title {
+    position: absolute;
+    border: solid 2px;
+    width: 90%;
+    height: 5%;
+    top: 2.5%;
+    left: 5%;
+    text-align: center;
+}
+
+#game_box {
+    position: absolute;
+    border: solid 2px;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.game_box_content {
+    border: solid 2px;
+    width: 30%;
+    height: 10%;
+}
+
+/*learn.html*/
+#learn_main {
+    position: relative;
+    height: 2000px;
+    background-color: green;
+}
+
+#learn_title {
+    position: absolute;
+    border: solid 2px;
+    text-align:center;
+    height: 5%;
+    width: 90%;
+    top: 2.5%;
+    left: 5%;
+}
+
+#learn_details {
+    position: absolute;
+    border: solid 2px;
+    height: 85%;
+    width:90%;
+    top: 10%;
+    left: 5%;
+}
+
+#learnProgress_title {
+    position: absolute;
+    text-align: center;
+    border: solid 2px;
+    height: 5%;
+    width: 90%;
+    left: 5%;
+}
+
+#learnProgress_description {
+    text-align: center;
+    position: absolute;
+    border: solid 2px;
+    height: 37.5%;
+    width: 45%;
+    top: 7.5%;
+    left: 5%;
+}
+
+#learnProgress_progress {
+    text-align: center;
+    position: absolute;
+    border: solid 2px;
+    height: 37.5%;
+    width: 45%;
+    top: 7.5%;
+    right: 5%;
+}
+
+#learnDescription_title {
+    position: absolute;
+    border: solid 2px;
+    text-align: center;
+    height: 5%;
+    width: 90%;
+    bottom: 40%;
+    left: 5%;
+}
+
+#learnDescription_description {
+    position: absolute;
+    border: solid 2px;
+    height: 37.5%;
+    width: 90%;
+    bottom: 0%;
+    left: 5%;
+}
+
+/*gallery.html*/
+#gallery_main {
+    position: relative;
+    height: 2000px;
+    background-color: green;
+}
+
+#gallery_title {
+    position: absolute;
+    text-align: center;
+    border: solid 2px;
+    height: 5%;
+    width: 90%;
+    top: 2.5%;
+    left: 5%;
+}
+
+.left {
+    position: absolute;
+    border: solid 2px;
+    width: 42.5%;
+    height: 88%;
+    top: 10%;
+    left: 5%;
+}
+
+.right {
+    position: absolute;
+    border: solid 2px;
+    width: 42.5%;
+    height: 88%;
+    top: 10%;
+    right: 5%;
+}
+
+/*login.html*/
+#login_main {
+    position: relative;
+    height: 1000px;
+    background-color: green;
+}
+
+#login_title {
+    position: absolute;
+    text-align:center;
+    border: solid 2px;
+    height: 5%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+}
+
+#login_field {
+    position: absolute;
+    width: 45%;
+    height: 10%;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+}
+
+#error_message {
+    position: absolute;
+    border: solid 2px;
+    width: 30%;
+    height: 2.5%;
+    top:31.25%;
+    left: 5%;
+    visibility: hidden;
+}
+
+#login_button {
+    position: absolute;
+    width: 10%;
+    top: 35%;
+    left: 40%;
+}
+
+#register_title {
+    position: absolute;
+    text-align:center;
+    border: solid 2px;
+    width: 90%;
+    height: 5%;
+    top: 60%;
+    left: 5%;
+}
+
+#createAccount_button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
